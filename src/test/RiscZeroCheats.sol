@@ -16,10 +16,10 @@
 
 pragma solidity ^0.8.17;
 
-import {Test} from "forge-std-1.8.2/src/Test.sol";
-import {StdCheatsSafe} from "forge-std-1.8.2/src/StdCheats.sol";
-import {CommonBase} from "forge-std-1.8.2/src/Base.sol";
-import {console2} from "forge-std-1.8.2/src/console2.sol";
+import {Test} from "forge-std-1.9.2/src/Test.sol";
+import {StdCheatsSafe} from "forge-std-1.9.2/src/StdCheats.sol";
+import {CommonBase} from "forge-std-1.9.2/src/Base.sol";
+import {console2} from "forge-std-1.9.2/src/console2.sol";
 
 import {ControlID, RiscZeroGroth16Verifier} from "../groth16/RiscZeroGroth16Verifier.sol";
 import {IRiscZeroVerifier} from "../IRiscZeroVerifier.sol";

@@ -16,7 +16,7 @@
 
 pragma solidity ^0.8.9;
 
-import {SafeCast} from "@openzeppelin-contracts-5.0.1/utils/math/SafeCast.sol";
+import {SafeCast} from "@openzeppelin-contracts-5.0.2/utils/math/SafeCast.sol";
 
 import {reverseByteOrderUint16} from "./Util.sol";
 

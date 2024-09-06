@@ -9,8 +9,8 @@ test = "test"
 libs = ["dependencies"]
 
 [dependencies]
-forge-std = "1.8.2"
-"@openzeppelin-contracts" = "5.0.1"
+forge-std = "1.9.2"
+"@openzeppelin-contracts" = "5.0.2"
 
 [soldeer]
 # whether soldeer manages remappings

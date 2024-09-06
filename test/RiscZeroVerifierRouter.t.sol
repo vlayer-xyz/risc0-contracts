@@ -16,9 +16,9 @@
 
 pragma solidity ^0.8.13;
 
-import {Test} from "forge-std-1.8.2/src/Test.sol";
-import {console2} from "forge-std-1.8.2/src/console2.sol";
-import {Ownable} from "@openzeppelin-contracts-5.0.1/access/Ownable.sol";
+import {Test} from "forge-std-1.9.2/src/Test.sol";
+import {console2} from "forge-std-1.9.2/src/console2.sol";
+import {Ownable} from "@openzeppelin-contracts-5.0.2/access/Ownable.sol";
 
 import {
     IRiscZeroVerifier,

@@ -7,9 +7,25 @@ solc = "0.8.26"
 src = "src"
 test = "test"
 libs = ["dependencies"]
+fs_permissions = [{ access = "read", path = "deployment.toml" }]
+ffi = true # Allow use of the ffi cheatcode in tests.
+
+# Compiler options
+
+via_ir = true
+evm_version = 'cancun'
+optimizer_runs = 10000
+solc_version = "0.8.26"
+# Do not append metadata hash to bytecode. We do not currently use it, and omitting it results in
+# more stable build artifacts, which is important since we check the bytecode into git.
+# For information about Solidity metadata, see https://docs.soliditylang.org/en/latest/metadata.html
+bytecode_hash = "none"
+
+[profile.deployment-test]
+test = "./deployment-test"
 
 [dependencies]
-forge-std = "1.9.2"
+forge-std = "1.9.4"
 "@openzeppelin-contracts" = "5.0.2"
 
 [soldeer]

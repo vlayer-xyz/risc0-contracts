@@ -1,4 +1,4 @@
-// Copyright 2024 RISC Zero, Inc.
+// Copyright 2025 RISC Zero, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 
 pragma solidity ^0.8.13;
 
-import {Test} from "forge-std-1.9.2/src/Test.sol";
-import {console2} from "forge-std-1.9.2/src/console2.sol";
+import {Test} from "forge-std/Test.sol";
+import {console2} from "forge-std/console2.sol";
 
 import {
     ExitCode,
@@ -57,7 +57,7 @@ contract RiscZeroGroth16VerifierTest is Test {
         verifier = new RiscZeroGroth16Verifier(ControlID.CONTROL_ROOT, ControlID.BN254_CONTROL_ID);
     }
 
-    function testConsistentSystemStateZeroDigest() external view {
+    function testConsistentSystemStateZeroDigest() external pure {
         require(
             ReceiptClaimLib.SYSTEM_STATE_ZERO_DIGEST
                 == sha256(
@@ -138,6 +138,6 @@ contract RiscZeroGroth16VerifierTest is Test {
     }
 
     function testSelectorIsStable() external view {
-        require(verifier.SELECTOR() == hex"50bd1769");
+        require(verifier.SELECTOR() == hex"0168e42c");
     }
 }
